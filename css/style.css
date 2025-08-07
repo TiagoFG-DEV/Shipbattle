@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(63, 63, 63);
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    color: White;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+    padding: 15px;
+    margin: -2px;
+    transition: 0.5s;
+}
+
+#mainGame {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/agua.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: White;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+    transition: 0.5s;
+    margin: 10px;
+}
+
+p {
+    color: White;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(63, 63, 63);
+    padding: 15px;
+    margin: -2px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.celula {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    border: solid rgb(63, 63, 63) 1px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 0.2s;
+    background-color: gray;
+}
+
+.zero {
+    border: solid rgb(63, 63, 63) 1px;
+    font-size: 15px;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+.semclique:hover {
+    transform: scale(1.2);
+}
+
+.imgCelula {
+    display: flex;
+    width: 110%;
+    height: 110%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 0s;
+    border: transparent;
+
+}
+
+#mainGame {
+    background-image: url("./img/agua.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#destructble {
+    background-color: rgb(63, 63, 63);
+    border: 0px solid transparent;
+    transition: 0.4s;
+}
+
+#imgButton {
+    display: solid;
+    border-radius: 0px transparent;
+    width: 600px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#imgButton:hover {
+    display: solid;
+    border-radius: 0px transparent;
+    content: url('./img/start_over.png');
+    transform: scale(1.01);
+}
+
+#destructble:hover {
+    transform: scale(1.01);
+}
+
+#restart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#restart {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#btrestart {
+    width: 100px;
+    height: 20px;
+    border: solid transparent 2px;
+    border-radius: 10px;
+    background-color: rgb(75, 27, 59);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.4s;
+}
+
+#btrestart:hover {
+    transform: scale(1.2);
+    background-color: rgb(98, 138, 138);
+}
